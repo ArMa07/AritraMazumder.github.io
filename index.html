@@ -1,122 +1,48 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-    color: white
-}
-
-.active {
-    background-color: #111;
-}
-h1{
-    font-family: Arial;
-    color: white;
-    text-align: center;
-    text-shadow:2px 2px 6px black
-}
-body  {
-    background-image: url("backg.jpg");
-    background-color: #cccccc;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: Arial;
-    font-size: 17px;
-    color: white;
-    text-align: center;
-    text-shadow:2px 2px 10px black;  
-}
-div.z {
-
-    text-align: Center;
-    font-family: Arial;
-    color: white;
-    text-shadow:2px 2px 6px black;
-    padding-left: 300px;   
-    padding-right: 300px;   
-}
-/*div {
-position: center;
-    width: 300px;
-    height: 400px;
-    box-shadow: 2px 2px 25px grey;
-}
-
-style="width:300px;height:400px;"*/
-a:link, a:visited {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    text-shadow:2px 2px 6px black
-}
-a:hover, a:active {
-    color: rgb(0, 255, 191);
-    text-shadow:2px 2px 10px black
-}
-img {
-  border-radius: 50%;
-}
-
-img.align-center {
-display: block;
-margin: 0px auto;}
-img.medium {
-width: 200px;
-height: 200px;
-box-shadow: 1px 1px 25px black;}
-
-
-</style>
-<title>Aritra Mazumder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<ul>
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="project.html">Projects</a></li>
-  <li><a href="Education.html">Education and Skills</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
-<p><br /><br /><h1>Aritra Mazumder</h1>
+    <header>
+        <h1>Aritra Mazumder</h1>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<br />
+    <main>
+        <section class="background-section">
+            <div class="image-container">
+                <img id="homeImage" src="my-picture.jpg" alt="Your Picture">
+            </div>
+            <p>
+                Hi, I am Aritra. I am a physics graduate student at the University of Colorado Boulder working under the guidance of Prof. Dan Dessau. Prior to my PhD I did my integrated BS-MS from IISER Kolkata with Major in Physics and Minor in Earth Science and Maths.
+		<br>Currently I am working
+                on instrumentation for a Scanning SQUID(Super Conducting Quantum Interference Devices) setup, which will be used for vortex
+                dynamics study in superconductors along with thermal and magnetic imaging. SQUIDs are very sensitive magnetometers and our SQUIDs will be built on top of very small(100nm) tips which will allow us very high spatial resolution and very low tip sample seperation(~50nm).I have
+                also been fabricating teeny tiny devices (micron sized) from crystals using Focused Ion Beam (FIB) to study novel physics such as the possibility of triplet paired
+                superconductivity and Chirality Induced Spin Selectivity (CISS).
+<br>I enjoy designing new experimental setup specially when they work! Other than that I dabble in painting, obsessing over my plants, going into rabit holes about ecological behaviour of animals and plants, get my days ruined by football (Arsenal) and I cook to relax.
+<br><br>
+There isn't much here, but feel free to browse around!
 
-<img src="2.jpg" alt="Aritra Mazumder" class="align-center medium">
+            </p>
+        </section>
+    </main>
 
-<br /><br /><br /><br />
-<div class="z">
-Hello there! Welcome to my IISER Kolkata webpage, I completed my 5 year BS-MS Dual-degree program at the Indian Institute of Science Education and Research Kolkata in 2019.
-I am joining the graduate school at UC Boulder fall-2019. During my stay here at IISER I have taken a strong interest to the experimental aspects of condensed matter physics and behaviour of materials
- at extreme conditions of pressure and temperature. During my stay at IISER I was a part of the <b><a href="http://www.iiserkol.ac.in/~nchps/" target="_blank">National Center for High Pressure Studies(NCHPS)</a></b>
-  as a BS-MS project student under Prof. Goutam Dev Mukherjee, working on developing set-up for low temperature Raman spectroscopy and studying different Rare earth systems,
-  I have also been involved with some computation related work during my stay here. I am also an avid follower of technology, a nature enthusiast, a football fanatic and I love to cook. 
-<br />I have very poor vision so I make best use of it by taking off my glasses when I want to ignore people.<br />
-</div>
+    <footer>
+        <p>&copy; 2024 Aritra Mazumder</p>
+    </footer>
 
-<br /><b>Copy of my CV: </b><a href="AritraCV.pdf" target="_blank">Aritra Mazumder</a></p>
+    <script src="script.js"></script>
 </body>
-<br /><br />
-<footer>
-<p>Designed and created by Aritra Mazumder
-</p>
-</footer>
 </html>
