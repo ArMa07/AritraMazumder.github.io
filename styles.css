@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Garamond', serif; /* Set font to Garamond */
+    line-height: 1.6;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+header {
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    color: #fff;
+    padding: 1rem 0;
+    position: relative; /* Needed for absolute positioning of the menu icon */
+    border: none; /* Ensure no border */
+    margin: 0; /* Remove margin */
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Garamond', serif; /* Ensure Garamond is used */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Garamond', serif; /* Ensure Garamond is used */
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 80vh; /* Adjust based on header and footer height */
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    margin: 0; /* Remove margin */
+    border: none; /* Ensure no border */
+}
+
+section {
+    text-align: center; /* Center text */
+}
+
+.background-section {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    margin: 0 auto; /* Center section */
+    max-width: 1200px; /* Reduce the width for a narrower background */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem; /* Spacing below the image */
+}
+
+#homeImage, #projectImage {
+    width: 300px; /* Adjust size */
+    height: 300px; /* Adjust size */
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Ensures the image fits the container */
+}
+
+
+/* Footer Styling */
+footer {
+    background: rgba(255, 255, 255, 0.8); /* Same as main body background */
+    color: #000; /* Match text color for readability */
+    text-align: center;
+    padding: 1rem 0;
+    border: none; /* Ensure no border */
+    margin: 0; /* Remove margin */
+    font-family: 'Garamond', serif; /* Ensure Garamond is used */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        width: 100%;
+        background: rgba(51, 51, 51, 0.9); /* Semi-transparent background */
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .background-section p {
+        max-width: 90%; /* Ensure text width is responsive */
+    }
+}
+
+.background-section {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    margin: 0 auto; /* Center section */
+    max-width: 1000px; /* Reduce the width for a narrower background */
+    border-radius: 8px; /* Rounded corners */
+
+
+}
+
+.background-section {
+background-image: url('background.jpg')
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent white background */
+    padding: 2rem;
+    border-radius: 8px; /* Rounded corners */
+    max-width: 1200px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the content box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+    text-align: center; /* Center text inside */
+	
+
+}
+
+/* Improve text visibility */
+.background-section p {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark background with transparency */
+    padding: 1rem;
+    border-radius: 8px; /* Rounded corners for better aesthetics */
+    max-width: 100%; /* Ensure the text block width adjusts with container */
+    margin: 0 auto; /* Center the text block */
+	font-size: 1.3rem;
+}
+
+
+/* Bullet List Styling */
+ul.bullet-list {
+    list-style-type: disc; /* Default bullet style */
+    margin: 2rem 0; /* Space around list */
+    padding: 2rem; /* Padding inside the list */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    border-radius: 8px; /* Rounded corners */
+    text-align: left; /* Align text to the left */
+    display: inline-block; /* Make the list fit its content width */
+
+}
+
+ul.bullet-list li {
+    margin-bottom: 0.5rem; /* Space between list items */
+    font-family: 'Garamond', serif; /* Ensure font consistency */
+    color: #fff; /* White text color for visibility */
+font-size: 1.2rem;
+}
+
+a:link, a:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow:2px 2px 6px black
+}
+a:hover, a:active {
+    color: rgb(0, 255, 191);
+    text-shadow:2px 2px 10px black
+}
+
